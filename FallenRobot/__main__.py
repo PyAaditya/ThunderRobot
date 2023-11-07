@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-**Kᴏɴɴɪᴄʜɪᴡᴀ** {}, **ɪ ᴀᴍ {}**!🧚‍♂️
+<b>Kᴏɴɴɪᴄʜɪᴡᴀ</b> {}, **ɪ ᴀᴍ {}**! 🧚‍♂️
 
 ➻ ɪ ᴀᴍ ᴀɴ Aɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ & ᴄᴏᴏʟ ғᴇᴀᴛᴜʀᴇs..
 
@@ -196,10 +196,10 @@ def start(update: Update, context: CallbackContext):
             elif args[0][1:].isdigit() and "rᴜʟᴇs" in IMPORTED:
                 IMPORTED["rᴜʟᴇs"].send_rules(update, args[0], from_pm=True)
 
-        else:
-            first_name = update.effective_user.first_name
-            update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+#        else:
+#            first_name = update.effective_user.first_name
+#            update.effective_message.reply_sticker(
+#                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
