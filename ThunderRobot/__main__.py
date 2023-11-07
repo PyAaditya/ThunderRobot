@@ -202,8 +202,8 @@ def start(update: Update, context: CallbackContext):
 #                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
 #            )
             update.effective_message.reply_photo(
-                photo='https://l.instagram.com/?u=https%3A%2F%2Fte.legra.ph%2Ffile%2Fa2de4884dbed0d2d8e7b1.jpg&e=AT1r5RN81AGUi1ja6plej_svlTmGGozbBbAyqHxCTluEwbx5tG4JnwOYhLkRmamrvq2iMAED0Aq2p8qNt8hM1E7HP6CQvm4FY2ckgg1adA71qOTGkFORkuUhIAuDX0mVjWtl-hzjZfZSOdx8lMpyGHw',
-                PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                photo='https://te.legra.ph/file/a2de4884dbed0d2d8e7b1.jpg',
+                caption=PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
