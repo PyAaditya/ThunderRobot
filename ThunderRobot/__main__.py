@@ -736,7 +736,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        Fallen_about_callback, pattern=r"thunder_", run_async=True
+        Thunder_about_callback, pattern=r"thunder_", run_async=True
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
