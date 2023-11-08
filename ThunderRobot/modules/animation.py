@@ -3,9 +3,9 @@ import time
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-from ArchRobot import dispatcher,OWNER_ID
-from ArchRobot.modules.disable import DisableAbleCommandHandler
-from ArchRobot.modules.helper_funcs.chat_status import user_admin
+from ThunderRobot import dispatcher,OWNER_ID
+from ThunderRobot.modules.disable import DisableAbleCommandHandler
+from ThunderRobot.modules.helper_funcs.chat_status import user_admin
 
 # sleep how many times after each edit in 'love'
 EDIT_SLEEP = 1
