@@ -11,7 +11,7 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ᴛʜᴜɴᴅᴇʀ 
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-  <img src="https://telegra.ph/file/6961eb4e48ff175661166.jpg">
+  <img src="https://telegra.ph/file/5ac7a9870013a03c26488.jpg">
 </p>
 
 <p align="center">
