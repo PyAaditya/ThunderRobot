@@ -91,12 +91,10 @@ buttons = [
         InlineKeyboardButton(text="ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ", callback_data="help_back"),
     ],
     [
-#        InlineKeyboardButton(text="ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ", callback_data="fallen_"),
         InlineKeyboardButton(text="ᴀᴅᴅ ᴛʜᴜɴᴅᴇʀ ᴛᴏ ᴀ ᴄʟᴀɴ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-#        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-#        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="source_"),
+        InlineKeyboardButton(text=" sᴏᴜʀᴄᴇ ", callback_data="source_"),
     ],
 ]
 
@@ -198,11 +196,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-#            update.effective_message.reply_sticker(
-#                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
-#            )
             update.effective_message.reply_photo(
-                photo='https://te.legra.ph/file/a2de4884dbed0d2d8e7b1.jpg',
+                photo='https://telegra.ph/file/5ac7a9870013a03c26488.jpg',
                 caption=PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
@@ -211,7 +206,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption=f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ!\n<b><u>ᴜᴘᴛɪᴍᴇ​:</u></b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -363,7 +358,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
+                            text="sᴜᴩᴩᴏʀᴛ", callback_data="thunder_support"
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
@@ -384,7 +379,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "fallen_support":
+    elif query.data == "thunder_support":
         query.message.edit_text(
             text="*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.*"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {BOT_NAME} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {BOT_NAME}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
@@ -405,16 +400,16 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="ɢɪᴛʜᴜʙ",
-                            url="https://github.com/AnonymousX1025",
+                            url="https://github.com/PyAaditya",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="fallen_"),
+                        InlineKeyboardButton(text="◁", callback_data="thunder_"),
                     ],
                 ]
             ),
         )
-    elif query.data == "fallen_back":
+    elif query.data == "thunder_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -440,10 +435,10 @@ def Source_about_callback(update: Update, context: CallbackContext):
 ᴀɴᴅ ᴜsɪɴɢ [sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) ᴀɴᴅ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
 
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/AnonymousX1025/ThunderRobot)
+*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/PyAaditya/ThunderRobot)
 
 
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/AnonymousX1025/ThunderRobot/blob/master/LICENSE).
+{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/PyAaditya/ThunderRobot/blob/master/LICENSE).
 © 2022 - 2023 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
 """,
             parse_mode=ParseMode.MARKDOWN,
@@ -492,11 +487,11 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
-                            url="https://t.me/{}?start=help".format(
-                                context.bot.username
-                            ),
+#                        InlineKeyboardButton(
+#                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+#                            url="https://t.me/{}?start=help".format(
+#                                context.bot.username
+#                            ),
                         )
                     ],
                     [
@@ -711,14 +706,14 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ㅤㅤ🍒 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ᴀɴᴅ ʀᴜʟɪɴɢ ᴛʜɪs ᴘʟᴀᴄ...
 
-┏•❅────✧❅✦❅✧────❅•┓
-ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
-ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
-ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-┗•❅────✧❅✦❅✧────❅•┛""",
+┏━━━━━━━━━━►►⦾
+ㅤ➙**ᴘʏᴛʜᴏɴ :** `{y()}`
+ㅤㅤ➙ **ʟɪʙʀᴀʀʏ :** `{telever}`
+ㅤㅤ➙ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
+ㅤㅤ➙ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
+┕━━━━━━━━━━━►►⦾""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
@@ -741,7 +736,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        Fallen_about_callback, pattern=r"fallen_", run_async=True
+        Fallen_about_callback, pattern=r"thunder_", run_async=True
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
